@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { height, width } from "@/utils/constants";
 import useTheme from "@/hooks/useTheme";
-import { getSize } from "@/utils/utilities";
+import { getSize } from "@/utils/helpers";
 
 interface FormFieldProps {
     title: string;

@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import React, { useRef, useState } from "react";
 import useTheme from "@/hooks/useTheme";
-import { getSize } from "@/utils/utilities";
+import { getSize } from "@/utils/helpers";
 import { router } from "expo-router";
 import { height, SLIDES, width } from "@/utils/constants";
 import getOnboardingStyles from "@/styles/onboardingStyles";

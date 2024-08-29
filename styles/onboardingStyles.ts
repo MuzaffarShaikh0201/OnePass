@@ -1,6 +1,6 @@
 import useTheme from "@/hooks/useTheme";
 import { StyleSheet } from "react-native";
-import { getSize } from "@/utils/utilities";
+import { getSize } from "@/utils/helpers";
 import { height, width } from "@/utils/constants";
 
 const getOnboardingStyles = () => {
