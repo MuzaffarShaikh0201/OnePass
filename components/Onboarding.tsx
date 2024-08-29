@@ -11,7 +11,7 @@ import {
 import React, { useRef, useState } from "react";
 import useTheme from "@/hooks/useTheme";
 import { getSize } from "@/utils/helpers";
-import { router } from "expo-router";
+import { Href, router } from "expo-router";
 import { height, SLIDES, width } from "@/utils/constants";
 import getOnboardingStyles from "@/styles/onboardingStyles";
 
@@ -103,7 +103,9 @@ const Onboarding = () => {
                     <View style={styles.buttons}>
                         <TouchableOpacity
                             style={styles.getStartedBtn}
-                            onPress={() => router.replace("/login")}
+                            onPress={() =>
+                                router.replace("/signup" as Href<string>)
+                            }
                         >
                             <Text
                                 style={{

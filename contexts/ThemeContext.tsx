@@ -26,7 +26,6 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
     const toggleTheme = () => {
         setTheme(theme === COLORS.light ? COLORS.dark : COLORS.light);
         globalStorage.set("theme", theme === COLORS.light ? "dark" : "light");
-        console.log(globalStorage.getString("theme"));
     };
 
     useEffect(() => {
